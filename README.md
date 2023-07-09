@@ -14,7 +14,7 @@ $ go get -u github.com/Daaaai0809/static-analysis
 $ go vet -vettool=$(which findIdorUrl) <FileName>
 ```
 
-## 使用例
+## ユースケース
 
 ```go
 package main
