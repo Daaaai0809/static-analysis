@@ -8,10 +8,12 @@ import (
 )
 
 var Analyzer = &analysis.Analyzer{
-	Name: "findIdORUrl",
-	Doc: "findIdORUrl finds identifiers which name are Id or Url",
+	Name: "findIdorUrl",
+	Doc: "findIdorUrl finds identifiers which name are Id or Url",
 	Run: run,
-	Requires: []*analysis.Analyzer{},
+	Requires: []*analysis.Analyzer{
+		inspect.Analyzer,
+	},
 }
 
 func run(pass *analysis.Pass) (interface{}, error) {

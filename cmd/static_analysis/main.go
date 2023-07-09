@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Daaaai0809/static-analysis/findIdorUrl"
+	"github.com/Daaaai0809/static-analysis"
 	"golang.org/x/tools/go/analysis/unitchecker"
 )
 
