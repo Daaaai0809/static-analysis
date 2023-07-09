@@ -20,12 +20,12 @@ $ go vet -vettool=$(which findIdorUrl) <FileName>
 package main
 
 type User struct {
-    Id int // Fail: IDに修正するとok
+    Id int // Fail
     Name string
 }
 
 type Path struct {
-    Url string // Fail: URLに修正するとok
+    Url string // Fail
 }
 
 func main() {
